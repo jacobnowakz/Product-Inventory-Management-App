@@ -21,7 +21,7 @@ def add_product(product_id: int,
                 int(stock))
     inventory.add_product(product)
     print('\nAdded product:')
-    product.display_info()
+    product.product_info
 
 @app.command()
 def add_stock(product_id: int, stock_quantity: int):
