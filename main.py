@@ -20,8 +20,8 @@ def add_product(product_id: int,
                 float(price),
                 int(stock))
     inventory.add_product(product)
-    print('\nAdded product:')
-    product.product_info
+    print("\nAdded product:"
+          f"{product.product_info}")
 
 @app.command()
 def add_stock(product_id: int, stock_quantity: int):
@@ -55,7 +55,7 @@ if __name__ == '__main__':
     
     # Adding products
     inventory.add_product(Product(1,"Laptop","Electronics",1000,10))
-    inventory.add_product(Product(2, "Headphones","Electronics",150.00,13))
+    inventory.add_product(Product(2, "Headphones","Electronics",150.00,3))
     inventory.add_product(Product(3, "Coffee Mug","Kitchenware",10.00,20))
     
     # Removing stock
