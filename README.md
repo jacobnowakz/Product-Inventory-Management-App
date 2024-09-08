@@ -10,6 +10,7 @@ Usage:
   2. Navigate to ..\Product-Inventory-Management-App-main\Product-Inventory-Management-App-main
   3. Run "python main.py", the output should look like this: ![image](https://github.com/user-attachments/assets/a0a7e05b-c127-4872-a709-f9a7239dc1df)
   4. To interact with the inventory via the CLI, run one of these commands:
+
        -"python main.py add-product [Product_ID] [Name] [Category] [Price] [Quantity]"                                                                                                        
        -"python main.py add-stock [Quantity]"                                                                                                           
        -"python main.py display-product"                                                                                                     
