@@ -12,7 +12,7 @@ Usage:
   4. To interact with the inventory via the CLI, run one of these commands:
 
        -"python main.py add-product [Product_ID] [Name] [Category] [Price] [Quantity]"                                                                                                        
-       -"python main.py add-stock [Quantity]"                                                                                                           
+       -"python main.py add-stock [Product_ID] [Quantity]"                                                                                                           
        -"python main.py display-product"                                                                                                     
        -"python main.py generate-low-stock-report"                                                                                                     
        -"python main.py generate-report"                                                                                                     
