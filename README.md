@@ -13,7 +13,7 @@ Usage:
 
        -"python main.py add-product [Product_ID] [Name] [Category] [Price] [Quantity]"                                                                                                        
        -"python main.py add-stock [Product_ID] [Quantity]"                                                                                                           
-       -"python main.py display-product"                                                                                                     
+       -"python main.py display-product [Product_ID]"                                                                                                     
        -"python main.py generate-low-stock-report"                                                                                                     
        -"python main.py generate-report"                                                                                                     
        -"python main.py remove-product [Product_ID]"                                                                                                     
