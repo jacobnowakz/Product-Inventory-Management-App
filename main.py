@@ -25,11 +25,21 @@ def add_product(product_id: int,
 
 @app.command()
 def add_stock(product_id: int, stock_quantity: int):
-    inventory.find_product(product_id).add_stock(stock_quantity)
+    try:
+        inventory.find_product(product_id).add_stock(stock_quantity)
+    except:
+        print("Product ID not found, please select an ID "
+              "from the products below:\n")
+        generate_report()
 
 @app.command()
 def display_product(product_id: int):
-    print(inventory.find_product(product_id).product_info)
+    try:
+        print(f"{inventory.find_product(product_id).product_info}\n")
+    except:
+        print("Product ID not found, please select an ID "
+              "from the products below:\n")
+        generate_report()
 
 @app.command()
 def generate_report(): inventory.generate_report()
@@ -38,12 +48,17 @@ def generate_report(): inventory.generate_report()
 def generate_low_stock_report(): inventory.generate_low_stock_report()
 
 @app.command()
-def remove_product(product_id: int): inventory.remove_product(product_id)
+def remove_product(product_id: int): 
+    inventory.remove_product(product_id)
 
 @app.command()
 def remove_stock(product_id: int, stock_amount: int): 
-    inventory.find_product(product_id).remove_stock(stock_amount)
-
+    try:
+        inventory.find_product(product_id).remove_stock(stock_amount)
+    except:
+        print("Product ID not found, please select an ID "
+              "from the products below:\n")
+        generate_report()
 
 if __name__ == '__main__':
 

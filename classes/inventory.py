@@ -7,8 +7,9 @@ class Inventory:
         self.products = {}
     
     # Search for product by ID and return the object
-    def find_product(self, product_id): return self.products[product_id]
-    
+    def find_product(self, product_id): 
+        return self.products[product_id]
+            
     # Displays all attributes for all products in inventory to user
     def generate_report(self):
         if len(self.products) > 0:
